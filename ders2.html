@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Çizim Yapma</h2>
+	<canvas id="canvas" width="200" height="100" style="border:1px solid black;"></canvas>
+
+
+	<br>
+	<h5><a href="index.html">Ana Sayfa</a></h5>
+	<h5><a href="ders1.html">Ders 1</a></h5>
+	<h5><a href="ders2.html">Ders 2</a></h5>
+	<h5><a href="ders3.html">Ders 3</a></h5>
+	<h5><a href="ders4.html">Ders 4</a></h5>
+	<h5><a href="odev.html">Ödev</a></h5>
+
+
+
+	<script>
+		var c=document.getElementById("canvas");
+		var ctx= c.getContext("2d");
+
+		ctx.moveTo(0,0);
+		ctx.lineTo(135,30);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.arc(150,45,23,0,2*Math.PI);
+
+		ctx.stroke();
+		ctx.font="20px Arial";
+		ctx.fillText("E",142,52);
+		
+
+		//çizgi çizme
+		/*ctx.moveTo(0,0);
+		ctx.lineTo(100,100);
+		ctx.lineTo(200,0);
+		ctx.lineTo(200,200);
+		ctx.lineTo(100,100);
+		ctx.lineTo(0,200);
+		ctx.lineTo(100,200);
+		ctx.lineTo(100,100);
+		ctx.lineTo(0,100);
+
+		ctx.stroke();*/
+
+		//çember çizme
+		/*ctx.beginPath();
+		ctx.arc(100,100,50,Math.PI/4,2*Math.PI);
+		ctx.stroke();*/
+		
+		//Metin Eklme
+		/*ctx.font="20px Arial";
+		ctx.fillText("-Hocam tatlı yok mu",10,100);
+		ctx.fillText("-Yarın inşallah",10,140);*/
+
+
+	</script>
+	
+</body>
+</html>
